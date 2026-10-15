@@ -12,6 +12,7 @@ from market_data import get_current_price, get_klines
 from technical import analyze
 
 app = FastAPI(title="Bitcoin Futures Analyzer")
+ @app.get("/") def home(): return "message": Bitcoin Analyzer is running", "docs": "/docs"
 
 # Autorise le frontend (servi separement) a appeler cette API
 app.add_middleware(
